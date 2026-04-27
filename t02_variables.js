@@ -1,21 +1,21 @@
 /****************************
-This is a block comment.
 task 2 variables
 ****************************/
-var name = "Zac";
+var username = "Zac";
 
 var age = 15;
 
-var pocketMoney = 10;
+var pocketMoney = 20;
 
 var year = 2026;
 
 console.log("Running t02_variables.js");
-console.log("Hi " + name);
-console.log(`Score is ${score}.`);
+console.log(`Hi ${username}`);
+console.log(`As of ${year} you are ${age} years old`);
+console.log(`You have ${pocketMoney} dollars`);
 
 
-As of ____ you are __ years old
 
-You have __ dollars
+
+
 
