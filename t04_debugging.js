@@ -1,17 +1,17 @@
-console.log("Task 4 - Debugging")
+console.log("Task 4 - Debugging");
 
-// calculate the area
-var area = length + width;
+// Set up the size of the page
+var windowlength = 8;
+var windowwidth = 10;
 
 // calculate the perimeter
-var perimeter = (2 * length) + (2 * width); 
+var perimeter = (2 * windowlength) + (2 * windowwidth); 
 
-// Set up the size of the page.
-var length = 8;
-var width = 10
+// calculate the area
+var area = windowlength * windowwidth;
 
 // Display the results
-console.log("A area of a piece of paper with a length of "+length+", and a width of "+width+" is "+ area);
+console.log("A area of a piece of paper with a length of "+windowlength+", and a width of "+windowwidth+" is "+ area);
 console.log("The same piece of paper has a perimeter of "+perimeter);
 
 // Check, does this result look sensible
