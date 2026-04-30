@@ -18,9 +18,9 @@
 <body>
   <h1>T10-input from HTML</h1>
 
-  <form>
-    <input></input>
-    <input></input>
+  <form onsubmit="return false;">
+    <input type="text" id="nameField" name="formName"></input>
+    <input type="submit" onclick="getFormInput();"></input>
   </form>
 
   <br>
