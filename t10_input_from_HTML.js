@@ -10,5 +10,5 @@ var OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 function getFormInput(){
     console.log("Running t10_input_from_HTML.js");
 
-    OUTPUT.innerHTML = "Welcome to the page " + username;
+    OUTPUT.innerHTML = "<p>Welcome to the page " + "a" + "</p>";
 }
