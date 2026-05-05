@@ -19,15 +19,11 @@ function getFormInput(){
     {
         let n = i;
         if(n == 1){
-            OUTPUT.innerHTML += "1 bottle of milk on the wall, ";
-            OUTPUT.innerHTML += "1 bottle of milk. ";
-            OUTPUT.innerHTML += "Take it down, pass it around, ";
-            OUTPUT.innerHTML += "no more bottles of milk on the wall.<br><br>";
+            OUTPUT.innerHTML += "1 bottle of milk on the wall, "+"1 bottle of milk. ";
+            OUTPUT.innerHTML += "Take it down, pass it around, "+"no more bottles of milk on the wall.<br><br>";
         }else{
-            OUTPUT.innerHTML += n + " bottles of milk on the wall, ";
-            OUTPUT.innerHTML += n + " bottles of milk. ";
-            OUTPUT.innerHTML += "Take one down, pass it around, ";
-            OUTPUT.innerHTML += (n - 1) + " bottles of milk on the wall.<br>";
+            OUTPUT.innerHTML += n + " bottles of milk on the wall, " + n + " bottles of milk. ";
+            OUTPUT.innerHTML += "Take one down, pass it around, " + (n - 1) + " bottles of milk on the wall.<br>";
         }
     }
     
