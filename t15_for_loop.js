@@ -29,7 +29,11 @@ function getFormInput(){
         OUTPUT.innerHTML += n + " bottles of milk on the wall, ";
         OUTPUT.innerHTML += n + " bottles of milk. ";
         OUTPUT.innerHTML += "Take one down, pass it around, ";
-        OUTPUT.innerHTML += (n - 1) + " bottles of milk on the wall.<br>";
+        if(n == 1){
+            OUTPUT.innerHTML += "no more bottles of milk on the wall.<br>";
+        }else{
+            OUTPUT.innerHTML += (n - 1) + " bottles of milk on the wall.<br>";
+        }
     }
     
 }
