@@ -6,13 +6,14 @@ const ITEMFIELD = document.getElementById("itemField");
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-var shoppingList
+var shoppingList = [];
 
 function getFormInput(){
     console.log("Running t16_arrays_continued.js");
 
-    amount = AMOUNTFIELD.value;
-
+    shoppingList.push = AMOUNTFIELD.value;
+}
+function ShowList(){
     OUTPUT.innerHTML = "Writing song starting at: " + amount + ".<br>";
 
     for(let i = amount; i > 0; i--)
@@ -26,9 +27,4 @@ function getFormInput(){
             OUTPUT.innerHTML += "Take one down, pass it around, " + (n - 1) + " bottles of milk on the wall.<br>";
         }
     }
-    
-}
-function ShowList(){
-
-
 }
