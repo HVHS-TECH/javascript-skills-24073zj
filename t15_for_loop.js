@@ -15,17 +15,17 @@ function getFormInput(){
 
     OUTPUT.innerHTML = "Writing song starting at: " + amount + ".<br>";
 
-    for(let i = 0; i < amount; i++)
+    /*for(let i = 0; i < amount; i++)
     {
-        let n = 99 - i;
+        let n = i;
         OUTPUT.innerHTML += n + " bottles of milk on the wall, ";
         OUTPUT.innerHTML += n + " bottles of milk. ";
         OUTPUT.innerHTML += "Take one down, pass it around, ";
         OUTPUT.innerHTML += (n - 1) + " bottles of milk on the wall.<br>";
-    }
+    }*/
     for(let i = 0; i < amount; i++)
     {
-        let n = (i * -1) + i;
+        let n = -i;
         OUTPUT.innerHTML += n + " bottles of milk on the wall, ";
         OUTPUT.innerHTML += n + " bottles of milk. ";
         OUTPUT.innerHTML += "Take one down, pass it around, ";
