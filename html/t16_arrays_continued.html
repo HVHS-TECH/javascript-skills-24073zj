@@ -17,16 +17,22 @@
 
 <body>
   <h1>T16-arrays continued</h1>
-  <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+  
+  <form onsubmit="return false;">
+    <h2>Shopping list</h2><br>
+    <label>Add an item:</label><br>
+    <input type="text" id="itemField"><br>
+    <input type="submit" onclick="getFormInput()" value="Add to list"><br>
+    <input type="submit" onclick="showList()" value="Show Items"><br>
+  </form>
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
+  <br>
 
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.
 
   </div>
-
 
   <script src="../t16_arrays_continued.js"></script>
 

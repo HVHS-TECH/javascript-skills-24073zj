@@ -2,11 +2,11 @@
 task 16 Arrays Continued
 ****************************/
 
-const AMOUNTFIELD = document.getElementById("amountField");
+const ITEMFIELD = document.getElementById("itemField");
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-var amount = 0;
+var shoppingList
 
 function getFormInput(){
     console.log("Running t16_arrays_continued.js");
@@ -27,4 +27,8 @@ function getFormInput(){
         }
     }
     
+}
+function ShowList(){
+
+
 }
