@@ -15,7 +15,7 @@ function getFormInput(){
 
     OUTPUT.innerHTML = "Writing song starting at: " + amount + ".<br>";
 
-    for(var i = amount; i <= 0; i--)
+    for(let i = 0; i < amount; i++)
     {
         OUTPUT.innerHTML += i + " bottles of milk on the wall,";
         OUTPUT.innerHTML += i + " bottles of milk.<br>";
