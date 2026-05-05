@@ -18,12 +18,15 @@ function getFormInput(){
     for(let i = amount; i > 0; i--)
     {
         let n = i;
-        OUTPUT.innerHTML += n + " bottles of milk on the wall, ";
-        OUTPUT.innerHTML += n + " bottles of milk. ";
-        OUTPUT.innerHTML += "Take one down, pass it around, ";
         if(n == 1){
+            OUTPUT.innerHTML += "1 bottle of milk on the wall, ";
+            OUTPUT.innerHTML += "1 bottle of milk. ";
+            OUTPUT.innerHTML += "Take it down, pass it around, ";
             OUTPUT.innerHTML += "no more bottles of milk on the wall.<br><br>";
         }else{
+            OUTPUT.innerHTML += n + " bottles of milk on the wall, ";
+            OUTPUT.innerHTML += n + " bottles of milk. ";
+            OUTPUT.innerHTML += "Take one down, pass it around, ";
             OUTPUT.innerHTML += (n - 1) + " bottles of milk on the wall.<br>";
         }
     }
