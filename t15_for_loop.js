@@ -17,11 +17,19 @@ function getFormInput(){
 
     for(let i = 0; i < amount; i++)
     {
-        OUTPUT.innerHTML += i + " bottles of milk on the wall,";
-        OUTPUT.innerHTML += i + " bottles of milk.<br>";
-        OUTPUT.innerHTML += "Take one down, pass it around,<br>";
-        OUTPUT.innerHTML += (i - 1) + " bottles of milk on the wall.";
-        console.log(i);
+        let n = 99 - i;
+        OUTPUT.innerHTML += n + " bottles of milk on the wall, ";
+        OUTPUT.innerHTML += n + " bottles of milk. ";
+        OUTPUT.innerHTML += "Take one down, pass it around, ";
+        OUTPUT.innerHTML += (n - 1) + " bottles of milk on the wall.<br>";
+    }
+    for(let i = 0; i < amount; i++)
+    {
+        let n = (i * -1) + i;
+        OUTPUT.innerHTML += n + " bottles of milk on the wall, ";
+        OUTPUT.innerHTML += n + " bottles of milk. ";
+        OUTPUT.innerHTML += "Take one down, pass it around, ";
+        OUTPUT.innerHTML += (n - 1) + " bottles of milk on the wall.<br>";
     }
     
 }
