@@ -2,6 +2,7 @@
 task 18 Validation
 ****************************/
 
+const SHOPPINGFORM = document.getElementById("shoppingForm");
 const ITEMFIELD = document.getElementById("itemField");
 
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
@@ -15,7 +16,7 @@ function getFormInput(){
         console.log("Running t18_validation.js");
         firstTime = false;
     }
-    if(ITEMFIELD.value != ""){
+    if(ITEMFIELD.value != "" && SHOPPINGFORM.checkValidity() === true){
         shoppingList.push(ITEMFIELD.value);
         ITEMFIELD.value = "";
         OUTPUT.innerHTML = "You have added " + shoppingList[shoppingList.length - 1] +" to the list";
