@@ -16,7 +16,6 @@ function getFormInput(){
         console.log("Running t19_string_handling.js");
         firstTime = false;
     }
-
     if(SHOPPINGFORM.checkValidity() === true && ITEMFIELD.value != "" && Number.isNaN(Number(ITEMFIELD.value))){
         shoppingList.push(ITEMFIELD.value);
         ITEMFIELD.value = "";
