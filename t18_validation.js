@@ -17,7 +17,7 @@ function getFormInput(){
         firstTime = false;
     }
     if(SHOPPINGFORM.checkValidity() === true){
-        if(ITEMFIELD.value != ""){
+        if(ITEMFIELD.value != "" && Number.isNaN(Number(ITEMFIELD.value))){
             shoppingList.push(ITEMFIELD.value);
             ITEMFIELD.value = "";
             OUTPUT.innerHTML = "You have added " + shoppingList[shoppingList.length - 1] +" to the list";
