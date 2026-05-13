@@ -14,5 +14,10 @@ function getFormInput(){
         console.log("Running t19_string_handling.js");
         firstTime = false;
     }
-    username = NAMEFIELD.value;
+    if(NAMEFIELD.value != "" && NAMEFIELD.value.trim().length >= 3){
+        username = NAMEFIELD.value.trim();
+        OUTPUT.innerHTML = "Hello " + username + ".<br>"
+    }else{
+        OUTPUT.innerHTML = "Please enter a valid name.<br>"
+    }
 }

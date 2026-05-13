@@ -17,16 +17,28 @@
 
 <body>
   <h1>T22-the DOM</h1>
-  <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
+  
+  <form id="nameForm" onsubmit="return false;">
+    <label>Enter your name:</label><br>
+    <input type="text" id="nameField"><br>
+    <label>Enter your age:</label><br>
+    <input type="text" id="ageField"><br>
+    <label>Enter your amount of pocket money:</label><br>
+    <input type="text" id="moneyField"><br>
+    <label>Enter your preference of chocolate:</label><br>
+    <input type="text" id="favChocField"><br>
+    <input type="submit" onclick="clearForm()" value="Clear">
+    <input type="submit" onclick="getFormInput()" value="Enter"><br>
+    <input type="submit" onclick="welcomeUsers()" value="Welcome Users"><br>
+  </form>
 
-  <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
-
+  <br>
+  
   <div id="spaceForJavaScriptOutput">
 
     The output of your script will go here.
 
   </div>
-
 
   <script src="../t22_the_DOM.js"></script>
 
